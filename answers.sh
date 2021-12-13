@@ -1,3 +1,4 @@
+Basic Queries:
 .1
 SELECT names database2 FROM student ;
 .2
@@ -12,3 +13,12 @@ INSERT INTO  student (Name , Age, Gender , Points) values ("assia","27","female"
 UPDATE  student SET points = points+1  WHERE  name ="Basma";
 .7
 UPDATE  student SET points = points-1  WHERE  name ="Alex";
+Creating Table:
+CREATE  TABLE Graduate(
+ID  Integer  Primary key AUTOINCREMENT,
+Name text NOT NULL UNIQUE,
+Age Integer,
+Gender Text,
+Points Integer,
+Graduation Date 
+)
