@@ -13,6 +13,7 @@ INSERT INTO  student (Name , Age, Gender , Points) values ("assia","27","female"
 UPDATE  student SET points = points+1  WHERE  name ="Basma";
 .7
 UPDATE  student SET points = points-1  WHERE  name ="Alex";
+
 Creating Table:
 CREATE  TABLE Graduate(
 ID  Integer  Primary key AUTOINCREMENT,
@@ -22,3 +23,14 @@ Gender Text,
 Points Integer,
 Graduation Date 
 )
+ Execute SQL:
+ .1 iNSERT INTO  Graduate (ID,Name,Age,Gender,Points)
+SELECT * FROM students WHERE  name = 'Layal';
+
+.2
+UPDATE Graduate
+SET Graduation =DATE ('2018-09-08')
+WHERE name = 'layal';
+
+.3
+DELETE FROM students WHERE  name ="layal";
